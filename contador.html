@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Chopp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contador de Chopp</h1>
+        <img src="chopp_pilsen_indupropil._3.jpg" alt="Chopp" class="chopp-img">
+        <h2>Total gasto: R$ <span id="total">0.00</span></h2>
+
+        <div class="controls">
+            <button onclick="alterarQuantidade(-1)">-</button>
+            <span id="quantidade">0</span>
+            <button onclick="alterarQuantidade(1)">+</button>
+        </div>
+
+        <button onclick="atualizarValor()">Atualizar Valor do Chopp</button>
+
+        <div id="resumo" class="hidden">
+            <p>Chopp sem Happy Hour: <span id="happyHourQtd">0</span></p>
+            <p>Chopp com Happy Hour: <span id="semHappyHourQtd">0</span></p>
+            <p>Total da Conta: R$ <span id="totalConta">0.00</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

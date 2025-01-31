@@ -1,0 +1,110 @@
+/* Definições gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f5deb3; /* Cor de cerveja clara */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal */
+.container {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff8dc; /* Fundo mais claro para contraste */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+h1 {
+    color: #8b4513; /* Marrom madeira de barril */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Imagens */
+.chopp-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 2px solid #d2691e; /* Cor de caneca de chopp */
+}
+
+/* Botões */
+button {
+    background-color: #d2691e; /* Cor de chopp */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+}
+
+button:hover {
+    background-color: #b3541e;
+}
+
+/* Controles do contador */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.controls button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+/* Resumo do happy hour */
+#resumo {
+    background-color: #fff;
+    border: 2px solid #d2691e;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#resumo p {
+    font-size: 1.2rem;
+    color: #8b4513;
+}
+
+/* Esconder elementos */
+.hidden {
+    display: none;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .controls button {
+        width: 60px;
+        height: 60px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
